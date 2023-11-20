@@ -125,7 +125,7 @@ Data columns (total 18 columns):
 dtypes: float64(1), int64(3), object(14)
 memory usage: 4.5+ MB
 
-#### Here are some pie charts that show the
+#### Here are some Pie Charts that show proportions in the features selected.
 <img src="images/condition_pie_chart.png"/>
 <img src="images/cylinders_pie_chart.png"/>
 <img src="images/drive_pie_chart.png"/>
@@ -137,6 +137,8 @@ memory usage: 4.5+ MB
 <img src="images/type_pie_chart.png"/>
 
 
+#### Here are some Kernel Density Estimate plots visualizing the distribution of observations for the features selected.
+
 <img src="images/condition_kdeplot.png"/>
 <img src="images/cylinders_kdeplot.png"/>
 <img src="images/drive_kdeplot.png"/>
@@ -144,12 +146,68 @@ memory usage: 4.5+ MB
 <img src="images/type_kdeplot.png"/>
 
 
+
+#### Here are some Heatmaps visualizing the magnitude of individual values.
+##### We can see that "odometer" has a negative correlation with price (-0.4) and model year (-0.47).
+##### This feature will be dropped.
 <img src="images/heatmap.png"/>
+
+##### We can see that "drive" has a negative correlation with price (-0.18) and model year (-0.12).
+##### This feature will be dropped.
 <img src="images/drop_odometer_heatmap.png"/>
+
+##### We can see that "size" has a negative correlation with price (-0.088) and model year (-0.075).
+##### This feature will be dropped.
 <img src="images/drop_drive_heatmap.png"/>
+
+##### Here is the Heat Map that will drive the selection of features for our modeling.
 <img src="images/drop_size_heatmap.png"/>
 
+
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 31048 entries, 215 to 426833
+Data columns (total 5 columns):
+
+ #   Column      Non-Null Count  Dtype
+---  ------      --------------  -----
+ 0   cylinders   31048 non-null  int32
+ 1   model_year  31048 non-null  int64
+ 2   condition   31048 non-null  int32
+ 3   type        31048 non-null  int32
+ 4   price       31048 non-null  int64
+dtypes: int32(3), int64(2)
+memory usage: 2.1 MB
+
+
 ### Modeling
+#### Using "train_test_split" on the data we derived from the Heatmaps, we end up with 
+##### 21,733 records for training
+#####  9,314 records for testing
+
+#### Applying Linear Regression we get the following:
+Coefficients: 
+[5.75105537e-01 3.00495003e+03 3.26941663e+02 5.24749893e+02]
+Intercept: 0
+Mean squared error: 149,420,617.16
+
+#### Applying Lasso we get 
+Coefficients:
+[1487.78153216 3784.29067093  237.87201826  407.27009612]
+Intercept: -2,994,567.65
+Mean squared error: 95,599,902.58
+
+#### Applying Ridge we get
+Coefficients:
+[1487.78662594 3784.33990351  237.87455949  407.33792712]
+Intercept: -2,994,578.21
+Mean squared error: 95,599,902.57
+
+
+#### With Intercept: 0, Plain Linear Regression is the best option
+#### Here is the Box Plot for that model
+<img src="/images/Box_Plot_0.png"/>
+
+#### Something unsusal appears when we plot the Test Prices vs Predicted Prices
 
 
 ### Evaluation
