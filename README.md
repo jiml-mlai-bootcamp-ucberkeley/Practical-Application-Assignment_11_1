@@ -99,9 +99,55 @@ state                0
 ##### $0 prices shouldn't be considered an actual sale.  Those will be discarded.
 ##### $1 is typically a nominal amount that is 'paid' and not a real value.  Those will be discarded.
 
-#### This is what we end up with going forward
+#### This is what we end up with going forward.
+Int64Index: 31048 entries, 215 to 426833
+Data columns (total 18 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   id            31048 non-null  int64  
+ 1   region        31048 non-null  object 
+ 2   price         31048 non-null  int64  
+ 3   manufacturer  31048 non-null  object 
+ 4   model         31048 non-null  object 
+ 5   condition     31048 non-null  object 
+ 6   cylinders     31048 non-null  object 
+ 7   fuel          31048 non-null  object 
+ 8   odometer      31048 non-null  float64
+ 9   title_status  31048 non-null  object 
+ 10  transmission  31048 non-null  object 
+ 11  VIN           31048 non-null  object 
+ 12  drive         31048 non-null  object 
+ 13  size          31048 non-null  object 
+ 14  type          31048 non-null  object 
+ 15  paint_color   31048 non-null  object 
+ 16  state         31048 non-null  object 
+ 17  model_year    31048 non-null  int64  
+dtypes: float64(1), int64(3), object(14)
+memory usage: 4.5+ MB
+
+#### Here are some pie charts that show the
+<img src="images/condition_pie_chart.png"/>
+<img src="images/cylinders_pie_chart.png"/>
+<img src="images/drive_pie_chart.png"/>
+<img src="images/fuel_pie_chart.png"/>
+<img src="images/manufacturer_pie_chart.png"/>
+<img src="images/size_pie_chart.png"/>
+<img src="images/title_pie_chart.png"/>
+<img src="images/transmission_pie_chart.png"/>
+<img src="images/type_pie_chart.png"/>
 
 
+<img src="images/condition_kdeplot.png"/>
+<img src="images/cylinders_kdeplot.png"/>
+<img src="images/drive_kdeplot.png"/>
+<img src="images/size_kdeplot.png"/>
+<img src="images/type_kdeplot.png"/>
+
+
+<img src="images/heatmap.png"/>
+<img src="images/drop_odometer_heatmap.png"/>
+<img src="images/drop_drive_heatmap.png"/>
+<img src="images/drop_size_heatmap.png"/>
 
 ### Modeling
 
