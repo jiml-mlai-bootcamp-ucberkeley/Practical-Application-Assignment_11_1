@@ -131,7 +131,8 @@ R2 Score: 0.62
 ### Insights
 ##### The only insights I can think of is to reference the experts.
 ##### Car Dealership Guy on Twitter has his finger on the pulse of car sales.
-##### In his latest tweets, 
+
+#### In his latest tweets, 
 ##### Used car prices are declining 
 <img src="images/CarDealershipGuy_Down.png" width="50%"/>
 
@@ -141,15 +142,26 @@ R2 Score: 0.62
 ##### Chevy is offering BIG incentives to move trucks
 <img src="images/CarDealershipGuy_Chevy.png" width="50%"/>
 
-##### Telsa is planning to start selling cars on Amazon
+##### Telsa is planning to start selling cars on Carsdotcom.
 <img src="images/CarDealershipGuy_Tesla.png" width="50%"/>
 
-##### Interest Rates on Inventory Floorplans are through the roof!
+##### Hyundai is planning to start selling cars on Amazon.
+<img src="images/CarDealershipGuy_Hyundai.png" width="50%"/>
+
+##### Hybrids are out selling EVs
+<img src="images/CarDealershipGuy_Hybrids.png" width="50%"/>
+
+##### And the worst news for last...
+#### Interest Rates on Inventory Floorplans are through the roof!
 <img src="images/CarDealershipGuy_IFP.png" width="50%"/>
 
 
 ### Next steps and recommendations
-#### I recommend 
+#### I recommend a cautious approach to build your inventory.
+#### Your sales people can tell you what shoppers are saying and how they feel about what's for sale.
+#### Find tools that help identify vehicles that suit your local demographics.
+#### Price those vehicles strategically to get the most profit.
+#### Leverage your network of financers to get the reasonable interest rates to maximize your cash floor.
 
 ## Link to notebook
 ### https://github.com/jiml-mlai-bootcamp-ucberkeley/Practical-Application-Assignment_11_1
