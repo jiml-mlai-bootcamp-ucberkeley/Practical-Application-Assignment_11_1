@@ -128,5 +128,27 @@ R2 Score: 0.62
 #####  worst Mean squared error: 149,420,617.16
 #####  worst Mean absolute error: 9,153.10
 
+### Insights
+##### The only insights I can think of is to reference the experts.
+##### Car Dealership Guy on Twitter has his finger on the pulse of car sales.
+##### In his latest tweets, 
+##### Used car prices are declining 
+<img src="images/CarDealershipGuy_Down.png"/>
+
+##### Ford has the least trusted branch
+<img src="images/CarDealershipGuy_Ford.png"/>
+
+##### Chevy is offering BIG incentives to move trucks
+<img src="images/CarDealershipGuy_Chevy.png"/>
+
+##### Telsa is planning to start selling cars on Amazon
+<img src="images/CarDealershipGuy_Tesla.png"/>
+
+##### Interest Rates on Inventory Floorplans are through the roof!
+<img src="images/CarDealershipGuy_IFP.png"/>
+
+
+### Next steps and recommendations
+
 ## Link to notebook
 ### https://github.com/jiml-mlai-bootcamp-ucberkeley/Practical-Application-Assignment_11_1
