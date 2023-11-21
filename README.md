@@ -3,14 +3,44 @@
 ## What Drives the Price of a Car?
 
 ## Context
+### According to Perplexity:
+##### The price of a car is determined by various factors, including the Manufacturer Suggested Retail Price (MSRP), mileage, condition, location, options, and color. The MSRP is the base price set by the manufacturer, which can be further influenced by additional features and add-on products. Mileage and condition are the primary factors affecting a used vehicle's price, with options, location, and color also playing a role. Other factors such as trim level, optional equipment, and the region where the car is being sold also contribute to the price.
 
 ## Business Understanding
+#### Many of the features in the dataset provided for this project are described in the "Context".  We can leverage this data and tweak them to find the best model and price estimates.  The initial focus will be to build a codebase that can be leveraged with modifications afterwards.  
 
 ## Data Understanding
 
 ### Data Descriptions
+#### Here is the preliminary info about our dataset.
+RangeIndex: 426880 entries, 0 to 426879
+Data columns (total 18 columns):
+ #   Column        Non-Null Count   Dtype  
+---  ------        --------------   -----  
+ 0   id            426880 non-null  int64  
+ 1   region        426880 non-null  object 
+ 2   price         426880 non-null  int64  
+ 3   year          425675 non-null  float64
+ 4   manufacturer  409234 non-null  object 
+ 5   model         421603 non-null  object 
+ 6   condition     252776 non-null  object 
+ 7   cylinders     249202 non-null  object 
+ 8   fuel          423867 non-null  object 
+ 9   odometer      422480 non-null  float64
+ 10  title_status  418638 non-null  object 
+ 11  transmission  424324 non-null  object 
+ 12  VIN           265838 non-null  object 
+ 13  drive         296313 non-null  object 
+ 14  size          120519 non-null  object 
+ 15  type          334022 non-null  object 
+ 16  paint_color   296677 non-null  object 
+ 17  state         426880 non-null  object 
+dtypes: float64(2), int64(2), object(14)
+memory usage: 58.6+ MB
 
-#### Here are some Pie Charts that show proportions in the features selected.
+
+#### Here are some Pie Charts that show proportions in the some of the features.
+#### These will be useful later during my insights.
 <img src="images/condition_pie_chart.png"/>
 <img src="images/cylinders_pie_chart.png"/>
 <img src="images/fuel_pie_chart.png"/>
@@ -22,19 +52,12 @@
 <img src="images/manufacturer_pie_chart.png"/>
 <img src="images/paint_color_pie_chart.png"/>
 
-#### Here are some Kernel Density Estimate plots visualizing the distribution of observations for a few features.
-<img src="images/condition_kdeplot.png"/>
-<img src="images/cylinders_kdeplot.png"/>
-<img src="images/drive_kdeplot.png"/>
-<img src="images/size_kdeplot.png"/>
-<img src="images/type_kdeplot.png"/>
-
 
 #### Here are some Heatmaps visualizing the magnitude of individual values.
 ##### We can see that "odometer" has a negative correlation with price (-0.4) and model year (-0.47).
 ##### We can see that "drive" has a negative correlation with price (-0.18) and model year (-0.12).
 ##### We can see that "size" has a negative correlation with price (-0.088) and model year (-0.075).
-##### This feature will be dropped.
+##### These features will be dropped.
 <img src="images/heatmap.png"/>
 
 ##### Here is the Heat Map that will drive the selection of features for our modeling.
@@ -127,6 +150,8 @@ R2 Score: 0.62
 #####  best R2: 0.12
 #####  worst Mean squared error: 149,420,617.16
 #####  worst Mean absolute error: 9,153.10
+#### The R2=0.12 indicates a good fit with the observed data compared with the other R2 scores.
+
 
 ### Insights
 ##### The only insights I can think of is to reference the experts.
