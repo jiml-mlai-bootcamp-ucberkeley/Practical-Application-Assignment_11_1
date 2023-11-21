@@ -133,19 +133,19 @@ R2 Score: 0.62
 ##### Car Dealership Guy on Twitter has his finger on the pulse of car sales.
 ##### In his latest tweets, 
 ##### Used car prices are declining 
-<img src="images/CarDealershipGuy_Down.png"/>
+<img src="images/CarDealershipGuy_Down.png" width="50%"/>
 
 ##### Ford has the least trusted branch
-<img src="images/CarDealershipGuy_Ford.png"/>
+<img src="images/CarDealershipGuy_Ford.png" width="50%/>
 
 ##### Chevy is offering BIG incentives to move trucks
-<img src="images/CarDealershipGuy_Chevy.png"/>
+<img src="images/CarDealershipGuy_Chevy.png" width="50%/>
 
 ##### Telsa is planning to start selling cars on Amazon
-<img src="images/CarDealershipGuy_Tesla.png"/>
+<img src="images/CarDealershipGuy_Tesla.png" width="50%/>
 
 ##### Interest Rates on Inventory Floorplans are through the roof!
-<img src="images/CarDealershipGuy_IFP.png"/>
+<img src="images/CarDealershipGuy_IFP.png" width="50%/>
 
 
 ### Next steps and recommendations
