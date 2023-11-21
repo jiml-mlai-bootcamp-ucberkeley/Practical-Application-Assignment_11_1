@@ -1,13 +1,14 @@
 # Practical-Application-Assignment_11_1
 
 ## What Drives the Price of a Car?
+<img src="images/transam.jpg" width="50%">
 
 ## Context
 ### According to Perplexity:
 ##### The price of a car is determined by various factors, including the Manufacturer Suggested Retail Price (MSRP), mileage, condition, location, options, and color. The MSRP is the base price set by the manufacturer, which can be further influenced by additional features and add-on products. Mileage and condition are the primary factors affecting a used vehicle's price, with options, location, and color also playing a role. Other factors such as trim level, optional equipment, and the region where the car is being sold also contribute to the price.
 
 ## Business Understanding
-#### Many of the features in the dataset provided for this project are described in the "Context".  We can leverage this data and tweak them to find the best model and price estimates.  The initial focus will be to build a codebase that can be leveraged with modifications afterwards.  
+#### Many of the features in the dataset provided for this project are described in the "Data Understanding".  We can leverage and tweak them to find the best model and price estimates.  The initial focus will be to build a codebase that can be leveraged with modifications afterwards.
 
 ## Data Understanding
 
@@ -130,7 +131,7 @@
     Mean absolute error: 5,444.64
     R2 Score: 0.62
 
-#### Building a DataFrame to organize our Model Predictions we can produce a Box Plot
+#### Building a DataFrame to organize our Model Predictions we can produce Box Plot diagrams
 <img src="images/Box_Plot_4.png"/>
 
 #### When we run Simple Cross Validation, the results indicate that the Polynomial Degree 4 is the best option.
@@ -146,47 +147,46 @@
 <img src="/images/Poly_Predict_Plot_0.png"/>
 
 ### Evaluation
-#### Standard Feature selection produces
-#####  best R2: 0.12
-#####  worst Mean squared error: 149,420,617.16
-#####  worst Mean absolute error: 9,153.10
-#### The R2=0.12 indicates a good fit with the observed data compared with the other R2 scores.
+    Standard Feature selection produces
+        best R2: 0.12
+        worst Mean squared error: 149,420,617.16
+        worst Mean absolute error: 9,153.10
+    The R2=0.12 indicates a good fit with the observed data compared with the other R2 scores.
 
 
 ### Insights
 ##### The only insights I can think of is to reference the experts.
 ##### Car Dealership Guy on Twitter has his finger on the pulse of car sales.
+https://twitter.com/GuyDealership
 
-#### In his latest tweets, 
-##### Used car prices are declining 
+### Used car prices are declining 
 <img src="images/CarDealershipGuy_Down.png" width="50%"/>
 
-##### Ford has the least trusted branch
+### Ford has the least trusted branch
 <img src="images/CarDealershipGuy_Ford.png" width="50%"/>
 
-##### Chevy is offering BIG incentives to move trucks
+### Chevy is offering BIG incentives to move trucks
 <img src="images/CarDealershipGuy_Chevy.png" width="50%"/>
 
-##### Telsa is planning to start selling cars on Carsdotcom.
+### Telsa is planning to start selling cars on Carsdotcom.
 <img src="images/CarDealershipGuy_Tesla.png" width="50%"/>
 
-##### Hyundai is planning to start selling cars on Amazon.
+### Hyundai is planning to start selling cars on Amazon.
 <img src="images/CarDealershipGuy_Hyundai.png" width="50%"/>
 
-##### Hybrids are out selling EVs
+### Hybrids are out selling EVs
 <img src="images/CarDealershipGuy_Hybrids.png" width="50%"/>
 
-##### And the worst news for last...
-#### Interest Rates on Inventory Floorplans are through the roof!
+### And the worst news for last...
+### Interest Rates on Inventory Floorplans are through the roof!
 <img src="images/CarDealershipGuy_IFP.png" width="50%"/>
 
 
-### Next steps and recommendations
-#### I recommend a cautious approach to build your inventory.
-#### Your sales people can tell you what shoppers are saying and how they feel about what's for sale.
-#### Find tools that help identify vehicles that suit your local demographics.
-#### Price those vehicles strategically to get the most profit.
-#### Leverage your network of financers to get the reasonable interest rates to maximize your cash floor.
+## Next steps and recommendations
+    I recommend a cautious approach to build your inventory.
+    Your sales people can tell you what shoppers are saying and how they feel about what's for sale.
+    Price those vehicles strategically to get the most profit.
+    Leverage your network of financers to get the reasonable interest rates to maximize your cash floor.
 
 ## Link to notebook
 ### https://github.com/jiml-mlai-bootcamp-ucberkeley/Practical-Application-Assignment_11_1
