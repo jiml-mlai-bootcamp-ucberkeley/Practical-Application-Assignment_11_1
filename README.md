@@ -13,30 +13,30 @@
 
 ### Data Descriptions
 #### Here is the preliminary info about our dataset.
-RangeIndex: 426880 entries, 0 to 426879
-Data columns (total 18 columns):
- #   Column        Non-Null Count   Dtype  
----  ------        --------------   -----  
- 0   id            426880 non-null  int64  
- 1   region        426880 non-null  object 
- 2   price         426880 non-null  int64  
- 3   year          425675 non-null  float64
- 4   manufacturer  409234 non-null  object 
- 5   model         421603 non-null  object 
- 6   condition     252776 non-null  object 
- 7   cylinders     249202 non-null  object 
- 8   fuel          423867 non-null  object 
- 9   odometer      422480 non-null  float64
- 10  title_status  418638 non-null  object 
- 11  transmission  424324 non-null  object 
- 12  VIN           265838 non-null  object 
- 13  drive         296313 non-null  object 
- 14  size          120519 non-null  object 
- 15  type          334022 non-null  object 
- 16  paint_color   296677 non-null  object 
- 17  state         426880 non-null  object 
-dtypes: float64(2), int64(2), object(14)
-memory usage: 58.6+ MB
+    RangeIndex: 426880 entries, 0 to 426879\n
+    Data columns (total 18 columns):
+        Column        Non-Null Count   Dtype  
+    ---  ------        --------------   -----  
+    0   id            426880 non-null  int64  
+    1   region        426880 non-null  object 
+    2   price         426880 non-null  int64  
+    3   year          425675 non-null  float64
+    4   manufacturer  409234 non-null  object 
+    5   model         421603 non-null  object 
+    6   condition     252776 non-null  object 
+    7   cylinders     249202 non-null  object 
+    8   fuel          423867 non-null  object 
+    9   odometer      422480 non-null  float64
+    10  title_status  418638 non-null  object 
+    11  transmission  424324 non-null  object 
+    12  VIN           265838 non-null  object 
+    13  drive         296313 non-null  object 
+    14  size          120519 non-null  object 
+    15  type          334022 non-null  object 
+    16  paint_color   296677 non-null  object 
+    17  state         426880 non-null  object 
+    dtypes: float64(2), int64(2), object(14)
+    memory usage: 58.6+ MB
 
 
 #### Here are some Pie Charts that show proportions in the some of the features.
@@ -66,32 +66,32 @@ memory usage: 58.6+ MB
 
 ### Modeling
 #### Using "train_test_split" on the data we derived from the Heatmaps, we end up with 
-21,733 records for training
- 9,314 records for testing
+    21,733 records for training
+    9,314 records for testing
 
 #### Applying Linear Regression
-Coefficients: 
-[5.75105537e-01 3.00495003e+03 3.26941663e+02 5.24749893e+02]
-Intercept: 0.00
-Mean squared error: 149,420,617.16
-Mean absolute error: 9,153.10
-R2 Score: 0.12
+    Coefficients: 
+    [5.75105537e-01 3.00495003e+03 3.26941663e+02 5.24749893e+02]
+    Intercept: 0.00
+    Mean squared error: 149,420,617.16
+    Mean absolute error: 9,153.10
+    R2 Score: 0.12
 
 #### Applying Lasso
-Coefficients:
-[1487.78153216 3784.29067093  237.87201826  407.27009612]
-Intercept: -2,994,567.65
-Mean squared error: 95,599,902.58
-Mean absolute error: 6,871.82
-R2 Score: 0.44
+    Coefficients:
+    [1487.78153216 3784.29067093  237.87201826  407.27009612]
+    Intercept: -2,994,567.65
+    Mean squared error: 95,599,902.58
+    Mean absolute error: 6,871.82
+    R2 Score: 0.44
 
 #### Applying Ridge with alpha=0.10
-Coefficients:
-[1487.78662594 3784.33990351  237.87455949  407.33792712]
-Intercept: -2,994,578.21
-Mean squared error: 95,599,902.57
-Mean absolute error: 6,871.82
-R2 Score: 0.44
+    Coefficients:
+    [1487.78662594 3784.33990351  237.87455949  407.33792712]
+    Intercept: -2,994,578.21
+    Mean squared error: 95,599,902.57
+    Mean absolute error: 6,871.82
+    R2 Score: 0.44
 
 
 #### With Intercept: 0, Plain Linear Regression is the best option
@@ -107,28 +107,28 @@ R2 Score: 0.44
 
 
 #### Applying Polynomial Feature Selection with Degree = 4
-Intercept: -7,498,424,291.24
-Mean squared error: 64,791,763.31
-Mean absolute error: 5,413.84
-R2 Score: 0.62
+    Intercept: -7,498,424,291.24
+    Mean squared error: 64,791,763.31
+    Mean absolute error: 5,413.84
+    R2 Score: 0.62
 
 #### Applying Ridge with alpha=0.10
-Intercept: -7,039,740,390.37
-Mean squared error: 64,871,764.62
-Mean absolute error: 5,419.70
-R2 Score: 0.62
+    Intercept: -7,039,740,390.37
+    Mean squared error: 64,871,764.62
+    Mean absolute error: 5,419.70
+    R2 Score: 0.62
 
 #### Applying Ridge with alpha=1.0
-Intercept: -6,930,278,059.67
-Mean squared error: 64,917,351.23
-Mean absolute error: 5,421.55
-R2 Score: 0.62
+    Intercept: -6,930,278,059.67
+    Mean squared error: 64,917,351.23
+    Mean absolute error: 5,421.55
+    R2 Score: 0.62
 
 #### Applying Ridge with alpha=10.0
-Intercept: -6,093,683,908.14
-Mean squared error: 65,237,594.85
-Mean absolute error: 5,444.64
-R2 Score: 0.62
+    Intercept: -6,093,683,908.14
+    Mean squared error: 65,237,594.85
+    Mean absolute error: 5,444.64
+    R2 Score: 0.62
 
 #### Building a DataFrame to organize our Model Predictions we can produce a Box Plot
 <img src="images/Box_Plot_4.png"/>
